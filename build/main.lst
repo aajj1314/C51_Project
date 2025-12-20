@@ -324,11 +324,13 @@
       000003 75 90 0F         [24]  324 	mov	_P1,#0x0f
                                     325 ;	src/main.c:7: P3 =0x01;
       000006 75 B0 01         [24]  326 	mov	_P3,#0x01
-                                    327 ;	src/main.c:8: while(1);
-      000009                        328 00102$:
-                                    329 ;	src/main.c:9: }
-      000009 80 FE            [24]  330 	sjmp	00102$
-                                    331 	.area CSEG    (CODE)
-                                    332 	.area CONST   (CODE)
-                                    333 	.area XINIT   (CODE)
-                                    334 	.area CABS    (ABS,CODE)
+                                    327 ;	src/main.c:8: TMOD = 0x01 ;
+      000009 75 89 01         [24]  328 	mov	_TMOD,#0x01
+                                    329 ;	src/main.c:9: while(1);
+      00000C                        330 00102$:
+                                    331 ;	src/main.c:11: }
+      00000C 80 FE            [24]  332 	sjmp	00102$
+                                    333 	.area CSEG    (CODE)
+                                    334 	.area CONST   (CODE)
+                                    335 	.area XINIT   (CODE)
+                                    336 	.area CABS    (ABS,CODE)

@@ -324,9 +324,11 @@ _main:
 	mov	_P1,#0x0f
 ;	src/main.c:7: P3 =0x01;
 	mov	_P3,#0x01
-;	src/main.c:8: while(1);
+;	src/main.c:8: TMOD = 0x01 ;
+	mov	_TMOD,#0x01
+;	src/main.c:9: while(1);
 00102$:
-;	src/main.c:9: }
+;	src/main.c:11: }
 	sjmp	00102$
 	.area CSEG    (CODE)
 	.area CONST   (CODE)

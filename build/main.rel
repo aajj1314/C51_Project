@@ -128,7 +128,7 @@ A GSINIT4 size 0 flags 20 addr 0
 A GSINIT5 size 0 flags 20 addr 0
 A GSINIT size 0 flags 20 addr 0
 A GSFINAL size 3 flags 20 addr 0
-A CSEG size B flags 20 addr 0
+A CSEG size E flags 20 addr 0
 S _main Def000000
 A CONST size 0 flags 20 addr 0
 A XINIT size 0 flags 20 addr 0
@@ -155,9 +155,9 @@ T 00 00 03 02 00 00
 R 00 00 00 0E 00 04 00 17
 T 00 00 00
 R 00 00 00 17
-T 00 00 00 75 80 55 75 90 0F 75 B0 01
+T 00 00 00 75 80 55 75 90 0F 75 B0 01 75 89 01
 R 00 00 00 17
-T 00 00 09
+T 00 00 0C
 R 00 00 00 17
-T 00 00 09 80 FE
+T 00 00 0C 80 FE
 R 00 00 00 17
