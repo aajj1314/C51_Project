@@ -305,7 +305,7 @@ __sdcc_program_startup:
 ;------------------------------------------------------------
 ;Allocation info for local variables in function 'main'
 ;------------------------------------------------------------
-;	/workspaces/C51_Project/src/main.c:2: void main()
+;	/workspaces/C51_Project/src/main.c:3: void main()
 ;	-----------------------------------------
 ;	 function main
 ;	-----------------------------------------
@@ -318,11 +318,11 @@ _main:
 	ar2 = 0x02
 	ar1 = 0x01
 	ar0 = 0x00
-;	/workspaces/C51_Project/src/main.c:4: P0 = 0x55;
+;	/workspaces/C51_Project/src/main.c:5: P0 = 0x55;
 	mov	_P0,#0x55
-;	/workspaces/C51_Project/src/main.c:5: while(1);
+;	/workspaces/C51_Project/src/main.c:6: while(1);
 00102$:
-;	/workspaces/C51_Project/src/main.c:6: }
+;	/workspaces/C51_Project/src/main.c:7: }
 	sjmp	00102$
 	.area CSEG    (CODE)
 	.area CONST   (CODE)

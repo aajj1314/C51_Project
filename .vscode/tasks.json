@@ -32,7 +32,6 @@
                 "-g",
                 "${file}",
                 "-o",
-                "-mcs51",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "options": {

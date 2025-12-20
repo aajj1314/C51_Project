@@ -305,7 +305,7 @@
                                     305 ;------------------------------------------------------------
                                     306 ;Allocation info for local variables in function 'main'
                                     307 ;------------------------------------------------------------
-                                    308 ;	/workspaces/C51_Project/src/main.c:2: void main()
+                                    308 ;	/workspaces/C51_Project/src/main.c:3: void main()
                                     309 ;	-----------------------------------------
                                     310 ;	 function main
                                     311 ;	-----------------------------------------
@@ -318,11 +318,11 @@
                            000002   318 	ar2 = 0x02
                            000001   319 	ar1 = 0x01
                            000000   320 	ar0 = 0x00
-                                    321 ;	/workspaces/C51_Project/src/main.c:4: P0 = 0x55;
+                                    321 ;	/workspaces/C51_Project/src/main.c:5: P0 = 0x55;
       000062 75 80 55         [24]  322 	mov	_P0,#0x55
-                                    323 ;	/workspaces/C51_Project/src/main.c:5: while(1);
+                                    323 ;	/workspaces/C51_Project/src/main.c:6: while(1);
       000065                        324 00102$:
-                                    325 ;	/workspaces/C51_Project/src/main.c:6: }
+                                    325 ;	/workspaces/C51_Project/src/main.c:7: }
       000065 80 FE            [24]  326 	sjmp	00102$
                                     327 	.area CSEG    (CODE)
                                     328 	.area CONST   (CODE)
