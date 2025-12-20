@@ -1,21 +1,30 @@
 {
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "C51 Build", // 中文显示“C51 生成”
-      "type": "shell",
-      "command": "sdcc",
-      "args": [
-        "-mmcs51",       // 关键：指定8051架构
-        "${file}",      // 当前打开的代码文件
-        "-o",           // 输出到build文件夹
-        "${fileDirname}/build/${fileBasenameNoExtension}.hex"
-      ],
-      "problemMatcher": ["$gcc"],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
-    }
-  ]
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "C51 Build Project",
+            "type": "shell",
+            "command": "sdcc",
+            "args": [
+                "src/main.c",
+                "-Iinc",
+                "-mmcs51",
+                "--opt-code-size",
+                "--out-fmt-ihx",
+                "-o",
+                "build/main.hex"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "Clean Build",
+            "type": "shell",
+            "command": "rm -rf build/*",
+            "group": "build"
+        }
+    ]
 }
