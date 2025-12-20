@@ -6,6 +6,7 @@ void main()
     P1 = 0x0f;
     P3 =0x01;
     TMOD = 0x01 ;
+    for (;;){}
     while(1);
 
 }
