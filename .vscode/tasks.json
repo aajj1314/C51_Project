@@ -6,7 +6,7 @@
       "type": "shell",
       "command": "sdcc",
       "args": [
-        "-mcs51",       // 关键：指定8051架构
+        "-mmcs51",       // 关键：指定8051架构
         "${file}",      // 当前打开的代码文件
         "-o",           // 输出到build文件夹
         "${fileDirname}/build/${fileBasenameNoExtension}.hex"
