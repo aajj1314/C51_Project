@@ -15,6 +15,4 @@ void main()
     Delay();
     P2=0xf0 ;
     while(1);
-
-
 }

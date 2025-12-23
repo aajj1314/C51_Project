@@ -343,7 +343,7 @@ _main:
 	mov	_P2,#0xf0
 ;	src/main.c:17: while(1);
 00102$:
-;	src/main.c:20: }
+;	src/main.c:18: }
 	sjmp	00102$
 	.area CSEG    (CODE)
 	.area CONST   (CODE)

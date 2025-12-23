@@ -343,7 +343,7 @@
       000072 75 A0 F0         [24]  343 	mov	_P2,#0xf0
                                     344 ;	src/main.c:17: while(1);
       000075                        345 00102$:
-                                    346 ;	src/main.c:20: }
+                                    346 ;	src/main.c:18: }
       000075 80 FE            [24]  347 	sjmp	00102$
                                     348 	.area CSEG    (CODE)
                                     349 	.area CONST   (CODE)
